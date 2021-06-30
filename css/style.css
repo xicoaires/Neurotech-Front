@@ -10,6 +10,7 @@
     height: 100%;
     margin: auto;
     border: black solid 3px;
+    border-radius: 10px;
     position: relative;
 
 }
@@ -17,6 +18,15 @@
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.top img{
+    width: 80vh;
+    height: 100%;
+    border-radius: 10px 10px;
+    padding: 0;
+    margin: 0;
+}
 
 }
 .top .banner-top {
@@ -32,8 +42,8 @@
 
 }
 .middle img {
-    width: 201px;
-    height: 120px;
+    width: 200px;
+    max-height: 120px;
 }
 
 .middle span{
