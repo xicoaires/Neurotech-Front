@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Aula 24/06</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/index.js" defer></script>
+
 </head>
 <body>
     <section class="main-section">
-        <section class="top">
-                <img class="banner-top" src="/images/banner-top.jpg" alt="Foto do letreiro do Recife">
+        <section class="top-section">
+                <img class="banner-top" src="./images/banner-top.jpg" alt="Foto do letreiro do Recife">
         </section>
-        <section class="middle">
+        <section class="middle-section">
             <div class="middle-image-1">
-                <img src="/images/img1.jpg" alt="Rua do Bom Jesus">
+                <img src="./images/img1.jpg" alt="Rua do Bom Jesus">
                 <span>Rua do Bom Jesus</span>
             </div>
             <div class="middle-image-2">
-                <img src="/images/img2.jpg" alt="Praia de Boa Viagem">
+                <img src="./images/img2.jpg" alt="Praia de Boa Viagem">
                 <span>Praia de Boa Viagem</span>
             </div>
             <div class="middle-image-3">
-                <img src="/images/img3.jpg" alt="Oficina Brennand">
+                <img src="./images/img3.jpg" alt="Oficina Brennand">
                 <span>Oficina Brennand</span>
             </div>
         </section>
-        <section class="bottom">
+        <section class="bottom-section">
             <div class="contato">
-                <form class="form">
-                    <h5>Nome:</h5><input class="field" name="name" placeholder="Digite seu nome">
-                    <h5>E-mail:</h5><input class="field" name="email" placeholder="exemplo@email.com">
-                    <h5>Telefone:</h5><input class="field" name="contato" placeholder="(00) 000000000">
-                    <h5>Mensagem:</h5><textarea class="field" name="message" placeholder="Digite aqui sua mensagem"></textarea>
-                    <input type="submit" value="Enviar">
+                <form action="" class="form" method="POST" name="formulario">
+                    Nome<input id="nome" name="nome" placeholder="Digite seu nome">
+                    E-mail<input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    Telefone<input id="telefone" name="telefone" maxlength="13" OnKeyPress="formatar('## ##########', this)" placeholder="00 00000-0000">
+                    Mensagem<textarea id="mensagem" name="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+                    <div class="button">
+                        <button type="button" class="botao" onclick="validar()">Enviar</button>
+                    </div>
                 </form>
             </div>
             <div class="dados">
-                <h5>DADOS</h5>
+                <p class="dado">DADOS</p>
                 <p>+55 81 99999-9999<br>
                     contato@contato.com.br<br><br>
-                    Av. Conde da Boa Vista, 14528<br>
+                    Av. Conde da Boa Vista, 00000<br>
                     Boa Vista  Recife - PE - Brasil</p>
                     <br>
+                <p class="dado">REDES SOCIAIS</p>
                     <a href="http://www.facebook.com" target="__blank"><img src="./images/facebook.png"></a>
                     <a href="http://www.instagram.com" target="__blank"><img src="./images/instagram.png"></a>
             </div>
