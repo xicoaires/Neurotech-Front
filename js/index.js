@@ -24,6 +24,7 @@ function validar() {
             mensagem.focus();
             return;        
         }
+        alert("Seu formulário foi enviado!");
     }   
     
     function formatar(mascara, documento){

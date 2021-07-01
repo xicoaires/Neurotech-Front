@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
 }
 
@@ -15,7 +15,6 @@ html{
     position: relative;
     background: white;
     border-radius: 10px;
-
 }
 .top-section{
     position: relative;
@@ -40,36 +39,39 @@ html{
 .middle-section {
     display: inline-flex;
     text-align: center;
-
+    background: orange;
+    margin-top: 0;
 }
+
 .middle-section img {
     width: 210px;
     height: 120px;
     object-fit: cover;
-
 }
 
 .middle-section span{
     text-transform: uppercase;
     text-align: center;
-    padding: initial;
     font-size: 10px;
     font-weight: 600;
-
 }
+
 .bottom-section {
     display: inline-flex;
     width: 80vh;
     position: relative;
-
+    padding-top: 10px;
+    background: whitesmoke;
+    padding-bottom: 15px;
 }
 
 .form {
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
     display: inline-flex;
     flex-direction: column;
     width: 40vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: orange;
     font-size: 9pt;
@@ -99,22 +101,28 @@ html{
 }
 
 .dados{
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
+
 .dados p{
     font-size: 13px;
 }
-.dado {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#dado {
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: orange;
     font-size: 9pt;
     font-weight: bold;
+    padding-bottom: 5px;
+
 }
 
 .dados img{
     width: 25px;
     height: 25px;
     margin-top: 5px;
+    margin-right: 10px;
 }
 
